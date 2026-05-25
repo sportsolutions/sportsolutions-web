@@ -161,9 +161,9 @@ export default function PesoIntegradoPage() {
         </div>
         <div className="max-w-4xl mx-auto px-6">
           <ZohoForm
-            src="https://forms.zohopublic.com/SportSolutions2025/form/FormIndoorCyclingWebSC3duplicadosanti/formperma/R9ltGr4fBPhZ5iNSR5dzqSDuBLj2t7hRWdHU-uB5yNQ"
-            label="Form Indoor Cycling SC3"
-            height="962px"
+            src="https://forms.zohopublic.com/SportSolutions2025/form/FormularioGeneral/formperma/HUZg-O-8C31vPjux7xvDXNp4XjgVvP-bLTjq6Acu-O4"
+            label="Formulario General"
+            height="804px"
           />
         </div>
       </section>
