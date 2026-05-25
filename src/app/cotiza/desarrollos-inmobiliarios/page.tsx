@@ -320,15 +320,6 @@ export default function DesarrollosInmobiliariosPage() {
                     <p className="text-black/55 text-sm font-light leading-relaxed mb-6 flex-1">
                       {p.description}
                     </p>
-                    <div className="pt-5 border-t border-gray-100">
-                      <Link
-                        href="#contacto"
-                        className="inline-flex items-center gap-2 text-black font-semibold text-sm hover:gap-3 transition-all duration-200 group/link"
-                      >
-                        Ver detalles
-                        <ArrowRight size={14} className="transition-transform duration-200 group-hover/link:translate-x-0.5" />
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </AnimateIn>
