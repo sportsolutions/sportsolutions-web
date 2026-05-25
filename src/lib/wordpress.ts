@@ -29,21 +29,17 @@ export interface WPCategory {
   count: number;
 }
 
-export const getPosts = unstable_cache(
-  async (page = 1, perPage = 9, category?: number): Promise<WPPost[]> => {
-    const params = new URLSearchParams({
-      per_page: String(perPage),
-      page: String(page),
-      _fields: 'id,slug,title,excerpt,date,featured_image_src,categories,yoast_head_json',
-    });
-    if (category) params.append('categories', String(category));
-    const res = await fetch(`${WP_API}/posts?${params}`);
-    if (!res.ok) return [];
-    return res.json();
-  },
-  ['wp-posts'],
-  { revalidate: 3600 }
-);
+export async function getPosts(page = 1, perPage = 9, category?: number): Promise<WPPost[]> {
+  const params = new URLSearchParams({
+    per_page: String(perPage),
+    page: String(page),
+    _fields: 'id,slug,title,excerpt,date,featured_image_src,categories,yoast_head_json',
+  });
+  if (category) params.append('categories', String(category));
+  const res = await fetch(`${WP_API}/posts?${params}`, { cache: 'no-store' });
+  if (!res.ok) return [];
+  return res.json();
+}
 
 export const getPost = unstable_cache(
   async (slug: string): Promise<WPPost | null> => {
