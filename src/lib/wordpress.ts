@@ -1,6 +1,6 @@
 import { unstable_cache } from 'next/cache';
 
-const WP_API = 'https://sportsolutions.com.mx/wp-json/wp/v2';
+const WP_API = 'https://blog.sportsolutions.com.mx/wp-json/wp/v2';
 
 export interface WPPost {
   id: number;

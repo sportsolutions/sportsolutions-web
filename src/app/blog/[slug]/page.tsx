@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
-const WP_API = 'https://sportsolutions.com.mx/wp-json/wp/v2';
+const WP_API = 'https://blog.sportsolutions.com.mx/wp-json/wp/v2';
 
 export const dynamic = 'force-dynamic';
 
