@@ -34,8 +34,8 @@ const products = [
     description:
       "La bicicleta elegida por los mejores estudios boutique del mundo. RythmBar™, SprintShift™, CarbonGlyde™. Garantía 10 años en estructura.",
     badge: "Distribuidor exclusivo",
-    image: "/images/productos/stages-sc2.jpg",
-    fallback: FALLBACK_GYM,
+    image: "/images/productos/stages-sc2-gym.jpg",
+    fallback: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
   },
 ];
 
