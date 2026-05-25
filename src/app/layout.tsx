@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "Diseñamos, equipamos e instalamos espacios fitness profesionales en México. Más de 15 años de experiencia con marcas líderes: Stages, Freemotion, Unofit y Pavigym.",
   keywords:
     "equipamiento gimnasio, gym comercial, indoor cycling, equipo fitness profesional, México",
+  icons: {
+    icon: "/favicon-ss.png",
+  },
   openGraph: {
     title: "Sport Solutions | Equipamiento Profesional para Gimnasios",
     description:

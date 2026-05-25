@@ -21,7 +21,6 @@ const equipoItems = [
   { label: "Elípticas",                 href: "/equipo/elipticas" },
   { label: "Equipos de peso libre",     href: "/equipo/peso-libre" },
   { label: "Equipos de peso integrado", href: "/equipo/peso-integrado" },
-  { label: "Equipo Funcional",          href: "/equipo/funcional" },
   { label: "Piso para gimnasio",        href: "/equipo/piso-gimnasio" },
 ];
 
