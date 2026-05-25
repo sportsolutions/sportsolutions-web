@@ -208,7 +208,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center">
             <Link
-              href="tel:+525500000000"
+              href="tel:+525552560727"
               className="flex items-center gap-2 text-[16px] font-black tracking-[0.12em] uppercase text-white bg-[#E8420C] px-5 py-2.5 hover:bg-[#d13a0a] transition-colors duration-200"
             >
               <Phone size={12} strokeWidth={2.5} />
@@ -335,7 +335,7 @@ export default function Navbar() {
 
             {/* CTA móvil */}
             <Link
-              href="tel:+525500000000"
+              href="tel:+525552560727"
               onClick={() => setMenuOpen(false)}
               className="mt-5 flex items-center justify-center gap-2 bg-[#E8420C] text-white font-black text-[16px] tracking-[0.12em] uppercase px-6 py-4 hover:bg-[#d13a0a] transition-colors duration-200"
             >
