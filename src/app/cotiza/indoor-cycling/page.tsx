@@ -272,13 +272,6 @@ export default function IndoorCyclingPage() {
                     <p className="text-black/55 text-sm lg:text-base font-light leading-relaxed mb-8 flex-1">
                       {m.description}
                     </p>
-                    <Link
-                      href="#contacto"
-                      className="inline-flex items-center gap-2 text-black font-semibold text-sm hover:gap-3 transition-all duration-200 group/link"
-                    >
-                      Ver detalles
-                      <ArrowRight size={15} className="transition-transform duration-200 group-hover/link:translate-x-0.5" />
-                    </Link>
                   </div>
                 </div>
               </AnimateIn>
