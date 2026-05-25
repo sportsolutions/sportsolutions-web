@@ -29,7 +29,11 @@ export const metadata: Metadata = {
   keywords:
     "equipamiento gimnasio, gym comercial, indoor cycling, equipo fitness profesional, México",
   icons: {
-    icon: "/favicon-ss.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-ss.png", type: "image/png" },
+    ],
+    apple: "/favicon-ss.png",
   },
   openGraph: {
     title: "Sport Solutions | Equipamiento Profesional para Gimnasios",
