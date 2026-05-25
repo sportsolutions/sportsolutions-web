@@ -213,7 +213,7 @@ export default function PesoIntegradoPage() {
               <div className="relative overflow-hidden" style={{ aspectRatio: "4/5" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://sportsolutions.com.mx/wp-content/uploads/2020/12/unofit_linea_elite-367x367.jpg"
+                  src="/images/productos/unofit-linea-elite.jpg"
                   alt="Equipos de peso integrado Unofit"
                   onError={(e) => {
                     e.currentTarget.src =

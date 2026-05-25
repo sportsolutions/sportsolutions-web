@@ -218,7 +218,7 @@ export default function PesoLibrePage() {
               <div className="relative overflow-hidden" style={{ aspectRatio: "4/5" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://sportsolutions.com.mx/wp-content/uploads/2021/01/Unofit-equipos-peso-libre.jpg"
+                  src="/images/productos/unofit-peso-libre.jpg"
                   alt="Zona de peso libre equipada por Sport Solutions"
                   onError={(e) => {
                     e.currentTarget.src =
