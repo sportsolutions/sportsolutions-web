@@ -33,7 +33,7 @@ const serviciosItems = [
 ];
 
 const navLinks = [
-  { label: "Blog",     href: "https://blog.sportsolutions.com.mx", target: "_blank", rel: "noopener noreferrer" },
+  { label: "Blog",     href: "/blog" },
   { label: "Contacto", href: "/contacto" },
 ];
 
