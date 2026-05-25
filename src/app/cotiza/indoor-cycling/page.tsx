@@ -262,16 +262,6 @@ export default function IndoorCyclingPage() {
                         {m.tag}
                       </span>
                     </div>
-                    {/* Logo badge */}
-                    <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-sm px-3 py-2">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src="/images/marcas/stages-logo.svg"
-                        alt="Stages Cycling"
-                        className="h-4 w-auto"
-                        style={{ filter: "brightness(0) invert(1)" }}
-                      />
-                    </div>
                   </div>
 
                   {/* Contenido */}
