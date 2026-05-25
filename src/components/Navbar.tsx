@@ -33,7 +33,7 @@ const serviciosItems = [
 ];
 
 const navLinks = [
-  { label: "Blog",     href: "/blog" },
+  { label: "Blog",     href: "https://blog.sportsolutions.com.mx", target: "_blank", rel: "noopener noreferrer" },
   { label: "Contacto", href: "/contacto" },
 ];
 
@@ -196,6 +196,8 @@ export default function Navbar() {
               <Link
                 key={l.label}
                 href={l.href}
+                target={l.target}
+                rel={l.rel}
                 className="text-[16px] font-semibold tracking-[0.08em] uppercase text-white/50 hover:text-white transition-colors duration-150 px-3 py-2"
               >
                 {l.label}
@@ -322,6 +324,8 @@ export default function Navbar() {
               <Link
                 key={l.label}
                 href={l.href}
+                target={l.target}
+                rel={l.rel}
                 onClick={() => setMenuOpen(false)}
                 className="text-white/60 text-[16px] font-semibold tracking-[0.08em] uppercase py-3.5 hover:text-white transition-colors border-b border-white/[0.06]"
               >
