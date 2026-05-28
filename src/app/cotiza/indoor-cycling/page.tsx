@@ -90,7 +90,8 @@ export default function IndoorCyclingPage() {
       <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/productos/stages-eqx.jpg"
+          src="/images/hero/stages-banner.jpeg"
+          onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"; }}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-center"
