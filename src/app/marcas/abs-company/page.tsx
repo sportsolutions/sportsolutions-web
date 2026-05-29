@@ -79,13 +79,6 @@ const products = [
       "Banco dual-pivot para trabajo simultáneo de abdomen superior e inferior. Versátil y de bajo mantenimiento.",
   },
   {
-    name: "AbCoaster® PS500",
-    zone: "AB ZONE",
-    image: "/images/tac/PS500.png",
-    description:
-      "Versión semi-comercial del Ab Coaster. Ideal para condominios y espacios con menor tráfico.",
-  },
-  {
     name: "Total Glute™",
     zone: "GLUTE ZONE",
     image: "/images/tac/dragons-lair-tg-1.jpg",
