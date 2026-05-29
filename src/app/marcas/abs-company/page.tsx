@@ -357,7 +357,7 @@ export default function AbsCompanyPage() {
             </h2>
           </AnimateIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0.5 bg-gray-100">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0.5 bg-gray-100">
             {products.map((p, i) => (
               <AnimateIn key={p.name} delay={i * 0.08} direction="none">
                 <div className="bg-white group flex flex-col h-full">
