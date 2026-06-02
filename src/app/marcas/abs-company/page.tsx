@@ -154,7 +154,7 @@ export default function AbsCompanyPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease, delay: 0.25 }}
-            className="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tight mb-8 max-w-4xl"
+            className="text-5xl md:text-6xl font-black text-white leading-[0.9] tracking-tight mb-8 max-w-4xl"
           >
             El sistema de entrenamiento más popular del mundo
           </motion.h1>
@@ -182,27 +182,6 @@ export default function AbsCompanyPage() {
               Cotiza tu zona
             </Link>
           </motion.div>
-        </div>
-      </section>
-
-      {/* ── 2. FORMULARIO ────────────────────────────────────────────────────── */}
-      <section id="contacto" className="bg-[#0a0a0a] py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-6 text-center mb-10">
-          <AnimateIn>
-            <h2 className="font-black text-4xl lg:text-5xl uppercase text-white tracking-tight">
-              Cotiza tu TAC System
-            </h2>
-            <p className="text-white/60 text-base mt-3">
-              Un asesor especializado se pondrá en contacto contigo.
-            </p>
-          </AnimateIn>
-        </div>
-        <div className="max-w-4xl mx-auto px-6">
-          <ZohoForm
-            src="https://forms.zohopublic.com/SportSolutions2025/form/FormularioGeneral/formperma/HUZg-O-8C31vPjux7xvDXNp4XjgVvP-bLTjq6Acu-O4"
-            label="Formulario General"
-            height="804px"
-          />
         </div>
       </section>
 
@@ -245,7 +224,7 @@ export default function AbsCompanyPage() {
               <p className="text-white/60 text-base lg:text-lg font-light leading-relaxed mb-8 max-w-md">
                 Con más de 33 mil millones de búsquedas sociales de
                 entrenamientos de abdomen y glúteos, y el 69% de los miembros
-                queriendo trabajar AMBAS zonas, el TAC System convierte esa
+                queriendo trabajar ambas zonas, el TAC System convierte esa
                 demanda en retención, ingresos y diferenciación competitiva.
               </p>
               <ul className="flex flex-col gap-4">
@@ -501,6 +480,27 @@ export default function AbsCompanyPage() {
               Y ahora disponible en México a través de Sport Solutions
             </p>
           </AnimateIn>
+        </div>
+      </section>
+
+      {/* ── 10. FORMULARIO ───────────────────────────────────────────────────── */}
+      <section id="contacto" className="bg-[#0a0a0a] py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-6 text-center mb-10">
+          <AnimateIn>
+            <h2 className="font-black text-4xl lg:text-5xl uppercase text-white tracking-tight">
+              Cotiza tu TAC System
+            </h2>
+            <p className="text-white/60 text-base mt-3">
+              Un asesor especializado se pondrá en contacto contigo.
+            </p>
+          </AnimateIn>
+        </div>
+        <div className="max-w-4xl mx-auto px-6">
+          <ZohoForm
+            src="https://forms.zohopublic.com/SportSolutions2025/form/FormularioGeneral/formperma/HUZg-O-8C31vPjux7xvDXNp4XjgVvP-bLTjq6Acu-O4"
+            label="Formulario General"
+            height="804px"
+          />
         </div>
       </section>
     </>
