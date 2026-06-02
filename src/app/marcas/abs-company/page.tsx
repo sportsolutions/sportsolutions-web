@@ -128,7 +128,7 @@ export default function AbsCompanyPage() {
       <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/tac/ab-coaster-cs3000.jpg"
+          src="/images/tac/tac-portada.webp"
           onError={(e) => {
             (e.currentTarget as HTMLImageElement).src =
               "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80";
