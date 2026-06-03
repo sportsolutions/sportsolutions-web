@@ -102,10 +102,39 @@ const products = [
 ];
 
 const layouts = [
-  { equipos: "4 equipos", area: "18–20 m²" },
-  { equipos: "6 equipos", area: "27–30 m²" },
-  { equipos: "8 equipos", area: "39–41 m²" },
-  { equipos: "10 equipos", area: "50–55 m²" },
+  {
+    equipos: "4 equipos",
+    tag: "STARTER",
+    area: "18–20 m²",
+    sqft: "200–225 sq ft",
+    descripcion: "Ideal para boutique gyms o pilotos de zona.",
+    equipo: ["Glute Lift Elite", "Total Glute", "Ab Coaster CS3000", "Vertical Crunch"],
+  },
+  {
+    equipos: "6 equipos",
+    tag: "STANDARD",
+    area: "27–30 m²",
+    sqft: "300–325 sq ft",
+    descripcion: "El más recomendado para clubs medianos.",
+    equipo: ["Glute Lift Elite", "Ab Coaster CS3000", "Vertical Crunch", "TireFlip 180", "Deadlift Machine", "The Froggy"],
+  },
+  {
+    equipos: "8 equipos",
+    tag: "POPULAR",
+    area: "39–41 m²",
+    sqft: "420–450 sq ft",
+    descripcion: "Equilibrio ideal entre cobertura y espacio.",
+    popular: true,
+    equipo: ["Glute Lift Elite", "Ab Solo", "Ab Coaster CS3000", "Vertical Crunch", "TireFlip 180", "Total Glute", "Deadlift Machine", "Belt Squat"],
+  },
+  {
+    equipos: "10 equipos",
+    tag: "PREMIUM",
+    area: "50–55 m²",
+    sqft: "550–600 sq ft",
+    descripcion: "Instalación flagship con cobertura total.",
+    equipo: ["Glute Lift Elite", "Standing Ab Twist", "Ab Solo", "Ab Coaster CS3000", "Vertical Crunch", "TireFlip 180", "The Froggy", "Deadlift Machine", "Belt Squat", "SledMill"],
+  },
 ];
 
 const certBullets = [
@@ -384,22 +413,56 @@ export default function AbsCompanyPage() {
             </h2>
           </AnimateIn>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-0.5 bg-white/5 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {layouts.map((l, i) => (
               <AnimateIn key={l.equipos} delay={i * 0.08} direction="none">
                 <div
-                  className="bg-[#0a0a0a] px-10 py-12 flex flex-col gap-3 border-t-2"
+                  className="bg-[#111] flex flex-col h-full border-t-4"
                   style={{ borderColor: GOLD }}
                 >
-                  <span
-                    className="text-3xl lg:text-4xl font-black leading-none"
-                    style={{ color: GOLD }}
-                  >
-                    {l.equipos}
-                  </span>
-                  <span className="text-white/50 text-sm uppercase tracking-widest">
-                    {l.area}
-                  </span>
+                  {/* Header */}
+                  <div className="px-8 pt-8 pb-5 border-b border-white/10">
+                    <div className="flex items-start justify-between gap-2 mb-2">
+                      <span className="text-xs font-black uppercase tracking-widest text-white/40">
+                        {l.tag}
+                      </span>
+                      {l.popular && (
+                        <span
+                          className="text-[10px] font-black px-2 py-0.5 uppercase tracking-widest"
+                          style={{ backgroundColor: GOLD, color: "#000" }}
+                        >
+                          ⭐ POPULAR
+                        </span>
+                      )}
+                    </div>
+                    <span
+                      className="text-3xl lg:text-4xl font-black leading-none block mb-1"
+                      style={{ color: GOLD }}
+                    >
+                      {l.equipos}
+                    </span>
+                    <span className="text-white/50 text-sm uppercase tracking-widest">
+                      {l.area} · {l.sqft}
+                    </span>
+                  </div>
+
+                  {/* Body */}
+                  <div className="px-8 py-6 flex flex-col gap-4 flex-1">
+                    <div>
+                      <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-2">
+                        Equipo sugerido
+                      </p>
+                      <ul className="flex flex-col gap-1.5">
+                        {l.equipo.map((e) => (
+                          <li key={e} className="flex items-start gap-2 text-white/70 text-sm">
+                            <span className="mt-1.5 w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: GOLD }} />
+                            {e}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p className="text-white/40 text-sm italic mt-auto">{l.descripcion}</p>
+                  </div>
                 </div>
               </AnimateIn>
             ))}
