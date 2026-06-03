@@ -106,7 +106,6 @@ const layouts = [
     equipos: "4 equipos",
     tag: "STARTER",
     area: "18–20 m²",
-    sqft: "200–225 sq ft",
     descripcion: "Ideal para boutique gyms o pilotos de zona.",
     equipo: ["Glute Lift Elite", "Total Glute", "Ab Coaster CS3000", "Vertical Crunch"],
   },
@@ -114,7 +113,6 @@ const layouts = [
     equipos: "6 equipos",
     tag: "STANDARD",
     area: "27–30 m²",
-    sqft: "300–325 sq ft",
     descripcion: "El más recomendado para clubs medianos.",
     equipo: ["Glute Lift Elite", "Ab Coaster CS3000", "Vertical Crunch", "TireFlip 180", "Deadlift Machine", "The Froggy"],
   },
@@ -122,7 +120,6 @@ const layouts = [
     equipos: "8 equipos",
     tag: "POPULAR",
     area: "39–41 m²",
-    sqft: "420–450 sq ft",
     descripcion: "Equilibrio ideal entre cobertura y espacio.",
     popular: true,
     equipo: ["Glute Lift Elite", "Ab Solo", "Ab Coaster CS3000", "Vertical Crunch", "TireFlip 180", "Total Glute", "Deadlift Machine", "Belt Squat"],
@@ -131,7 +128,6 @@ const layouts = [
     equipos: "10 equipos",
     tag: "PREMIUM",
     area: "50–55 m²",
-    sqft: "550–600 sq ft",
     descripcion: "Instalación flagship con cobertura total.",
     equipo: ["Glute Lift Elite", "Standing Ab Twist", "Ab Solo", "Ab Coaster CS3000", "Vertical Crunch", "TireFlip 180", "The Froggy", "Deadlift Machine", "Belt Squat", "SledMill"],
   },
@@ -442,7 +438,7 @@ export default function AbsCompanyPage() {
                       {l.equipos}
                     </span>
                     <span className="text-white/50 text-sm uppercase tracking-widest">
-                      {l.area} · {l.sqft}
+                      {l.area}
                     </span>
                   </div>
 
@@ -536,7 +532,7 @@ export default function AbsCompanyPage() {
       <section className="bg-[#111] py-24 lg:py-32 text-center">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateIn>
-            <p className="text-white/40 text-xs font-semibold uppercase tracking-[0.2em] mb-6">
+            <p className="text-white/70 text-sm font-semibold uppercase tracking-[0.2em] mb-6">
               Presencia global
             </p>
             <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight mb-8">
@@ -545,7 +541,7 @@ export default function AbsCompanyPage() {
             <p className="text-white font-bold text-base lg:text-lg leading-relaxed mb-6">
               {gyms}
             </p>
-            <p className="text-white/40 text-sm">
+            <p className="text-white/80 text-xl font-medium">
               Y ahora disponible en México a través de Sport Solutions
             </p>
           </AnimateIn>
