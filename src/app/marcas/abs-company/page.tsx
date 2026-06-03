@@ -549,13 +549,13 @@ export default function AbsCompanyPage() {
       </section>
 
       {/* ── 10. FORMULARIO ───────────────────────────────────────────────────── */}
-      <section id="contacto" className="bg-[#0a0a0a] py-16 lg:py-24">
+      <section id="contacto" className="bg-gray-100 py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center mb-10">
           <AnimateIn>
-            <h2 className="font-black text-4xl lg:text-5xl uppercase text-white tracking-tight">
+            <h2 className="font-black text-4xl lg:text-5xl uppercase text-black tracking-tight">
               Cotiza tu TAC System
             </h2>
-            <p className="text-white/60 text-base mt-3">
+            <p className="text-black/60 text-base mt-3">
               Un asesor especializado se pondrá en contacto contigo.
             </p>
           </AnimateIn>
