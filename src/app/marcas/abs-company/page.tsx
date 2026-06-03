@@ -188,6 +188,12 @@ export default function AbsCompanyPage() {
       {/* ── 3. STATS ─────────────────────────────────────────────────────────── */}
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-4xl lg:text-5xl font-black text-black text-center mb-4">
+            El estándar mundial del entrenamiento de glúteos y abdomen llegó a México.
+          </h2>
+          <p className="text-lg text-black/60 text-center mb-12">
+            Ahora disponible exclusivamente para gimnasios mexicanos a través de Sport Solutions.
+          </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((s, i) => (
               <AnimateIn key={s.label} delay={i * 0.08} direction="none">
