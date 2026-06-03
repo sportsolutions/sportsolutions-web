@@ -67,7 +67,7 @@ const products = [
   {
     name: "Ab Coaster® CTL",
     zone: "AB ZONE",
-    image: "/images/tac/ab-coaster-ctl.jpg",
+    image: "/images/tac/ab-coaster-ctl.webp",
     description:
       "Versión trackless con diseño compacto. Ideal para espacios donde se necesita máximo rendimiento con mínima huella.",
   },
@@ -81,7 +81,7 @@ const products = [
   {
     name: "Total Glute™",
     zone: "GLUTE ZONE",
-    image: "/images/tac/dragons-lair-tg-1.jpg",
+    image: "/images/tac/total-glute-new.webp",
     description:
       "Máquina multiuso para glúteos: abducción, sentadillas, estocadas y deadlifts. Todo en una sola unidad.",
   },
