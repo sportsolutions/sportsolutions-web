@@ -549,7 +549,7 @@ export default function AbsCompanyPage() {
       </section>
 
       {/* ── 10. FORMULARIO ───────────────────────────────────────────────────── */}
-      <section id="contacto" className="bg-gray-100 py-16 lg:py-24">
+      <section id="contacto" className="bg-[#eef0f3] py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center mb-10">
           <AnimateIn>
             <h2 className="font-black text-4xl lg:text-5xl uppercase text-black tracking-tight">
