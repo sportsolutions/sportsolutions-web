@@ -186,19 +186,19 @@ export default function AbsCompanyPage() {
       </section>
 
       {/* ── 3. STATS ─────────────────────────────────────────────────────────── */}
-      <section className="bg-black py-24 lg:py-32">
+      <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-0.5 bg-white/5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((s, i) => (
               <AnimateIn key={s.label} delay={i * 0.08} direction="none">
-                <div className="bg-black px-10 py-12 flex flex-col gap-2">
+                <div className="bg-white px-10 py-12 flex flex-col gap-2 text-center">
                   <span
                     className="text-5xl lg:text-6xl font-black leading-none"
                     style={{ color: GOLD }}
                   >
                     {s.value}
                   </span>
-                  <span className="text-white/55 text-sm uppercase tracking-widest font-medium">
+                  <span className="text-black/60 text-sm uppercase tracking-widest font-medium">
                     {s.label}
                   </span>
                 </div>
