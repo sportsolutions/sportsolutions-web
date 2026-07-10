@@ -3,6 +3,7 @@ import { Geist, Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GclidTracker from "@/components/GclidTracker";
 import Script from "next/script";
 
 const geist = Geist({
@@ -75,6 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <GclidTracker />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
