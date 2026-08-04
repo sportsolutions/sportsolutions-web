@@ -4,6 +4,7 @@ import WhySportSolutions from "@/components/sections/WhySportSolutions";
 import Brands from "@/components/sections/Brands";
 import HomeCTA from "@/components/sections/HomeCTA";
 import ZohoForm from "@/components/ZohoForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function HomePage() {
   return (
@@ -28,6 +29,7 @@ export default function HomePage() {
           />
         </div>
       </section>
+      <WhatsAppButton />
     </>
   );
 }
