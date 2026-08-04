@@ -9,7 +9,7 @@ const sections = [
     imageRight: true,
     dark: false,
     image:
-      "/images/hero/cotiza-tu-proyecto.jpg",
+      "/images/general/equipo-gimnasio-profesional.jpg",
     title: "No solo vendemos equipos",
     subtitle: "Creamos el gimnasio perfecto para tu espacio",
     body: "Asesoría, diseño de layout, instalación certificada y soporte continuo en los 32 estados de México.",
